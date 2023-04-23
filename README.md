@@ -2,7 +2,7 @@
 
 This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX).
 
-### **[Live Site Link]()**
+### **[Live Site Link](https://jbhm-tip-calculator-app.netlify.app/)**
 
 ---
 
