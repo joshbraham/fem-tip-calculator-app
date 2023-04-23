@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<script src="main.js" defer></script>
+		<title>Frontend Mentor | Tip calculator app</title>
+
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="stylesheet" href="styles/reset.css" />
+	</head>
+	<body>
+		<header role="banner">
+			<img src="images/logo.svg" class="logo" alt="SPLITTER" />
+			<h1>Tip Calculator</h1>
+		</header>
+
+		<main role="main">
+			<section class="calculator-input">
+				<!-- BILL -->
+				<h2 class="field-header">
+					<label class="title" for="bill">Bill</label
+					><span id="bill-error" class="error"></span>
+				</h2>
+				<div class="wide-input bill">
+					<input id="bill" placeholder="0" type="text" />
+				</div>
+				<!-- TIP -->
+				<h2 class="field-header">
+					<span class="title">Select Tip %</span
+					><span id="tip-error" class="error"></span>
+				</h2>
+				<div class="tip-container">
+					<div class="tip-item">
+						<input
+							class="tip-checkbox"
+							id="five"
+							value="5"
+							type="radio"
+							name="tip"
+						/>
+						<label class="tip-label" for="five">5%</label>
+					</div>
+					<div class="tip-item">
+						<input
+							class="tip-checkbox"
+							id="ten"
+							value="10"
+							type="radio"
+							name="tip"
+						/>
+						<label class="tip-label" for="ten">10%</label>
+					</div>
+					<div class="tip-item">
+						<input
+							class="tip-checkbox"
+							id="fifteen"
+							value="15"
+							type="radio"
+							name="tip"
+						/>
+						<label class="tip-label" for="fifteen">15%</label>
+					</div>
+					<div class="tip-item">
+						<input
+							class="tip-checkbox"
+							id="twenty-five"
+							value="25"
+							type="radio"
+							name="tip"
+						/>
+						<label class="tip-label" for="twenty-five">25%</label>
+					</div>
+					<div class="tip-item">
+						<input
+							class="tip-checkbox"
+							id="fifty"
+							value="50"
+							type="radio"
+							name="tip"
+						/>
+						<label class="tip-label" for="fifty">50%</label>
+					</div>
+					<!-- TIP: Custom -->
+					<div class="tip-item custom">
+						<input id="custom" type="text" placeholder="Custom" />
+					</div>
+				</div>
+				<!-- NO. PEOPLE -->
+				<h2 class="field-header">
+					<label class="title" for="num-people">Number of People</label
+					><span id="num-people-error" class="error"></span>
+				</h2>
+				<div class="wide-input num-people">
+					<input id="num-people" type="text" placeholder="0" />
+				</div>
+			</section>
+
+			<section class="calculator-output">
+				<div class="bill-details">
+					<p class="bill-tip">
+						<span class="bill-label">Tip Amount <br /></span
+						><span class="bill-value">0.00</span>
+					</p>
+					<p class="bill-total">
+						<span class="bill-label">Total <br /></span
+						><span class="bill-value">0.00</span>
+					</p>
+				</div>
+				<button class="btn-reset" disabled>RESET</button>
+			</section>
+		</main>
+
+		<footer role="contentinfo" class="attribution">
+			<p>
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="#">@joshbraham</a>.
+			</p>
+		</footer>
+	</body>
+</html>
